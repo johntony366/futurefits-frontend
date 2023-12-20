@@ -41,7 +41,7 @@ export default function DNSAlert() {
           <div className="flex flex-col rounded-md p-4 bg-gray-50 dark:bg-gray-800">
             <div className="flex justify-start mb-2">
               <h1 className="font-bold text-xl flex justify-start">
-                DNS Alerts
+                Ransomware Alerts
               </h1>
             </div>
             <div className="flex justify-center">
