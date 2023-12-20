@@ -99,12 +99,6 @@ export default function IPGeolocation() {
       <div className="bg-white w-24 h-full">
         <div id="map-layer"></div>
       </div>
-
-      <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfHCZ4IxxN12PU9WbTq3U5q6W-l28w_dI&callback=initMap"
-        async
-        defer
-      ></script>
     </div>
   );
 }
