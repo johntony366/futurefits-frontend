@@ -6,6 +6,8 @@ import { IconNetwork } from "@tabler/icons-react";
 import { IconDeviceDesktopExclamation } from "@tabler/icons-react";
 import { IconBook2 } from "@tabler/icons-react";
 import { IconHelp } from "@tabler/icons-react";
+import { IconReportAnalytics } from "@tabler/icons-react";
+import { IconSpider } from "@tabler/icons-react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -42,7 +44,12 @@ export default function Sidebar() {
       >
         <div className="h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800">
           <div className="mb-2 pb-3  border-b border-gray-200 dark:border-gray-700">
-            <span className=" font-extrabold text-2xl ">ComproAlert</span>
+            <a
+              href="/"
+              className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+            >
+              <span className=" font-extrabold text-2xl ">ComproAlert</span>
+            </a>
           </div>
           <div className="mb-2">
             <span className="ms-1 pro font-bold text-lg">Dashboard</span>
@@ -50,7 +57,29 @@ export default function Sidebar() {
           <ul className="space-y-2 font-medium">
             <li>
               <a
-                href="/networkflow"
+                href="/correlatedAnomalies"
+                className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+              >
+                <IconReportAnalytics />
+                <span className="flex-1 ms-3 whitespace-nowrap">
+                  Correlated Anomalies
+                </span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="/ransomware"
+                className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+              >
+                <IconSpider />
+                <span className="flex-1 ms-3 whitespace-nowrap">
+                  Ransomware Alert
+                </span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="/networkFlow"
                 className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
               >
                 <IconNetwork />
@@ -61,18 +90,18 @@ export default function Sidebar() {
             </li>
             <li>
               <a
-                href="/systemcalls"
+                href="/systemCalls"
                 className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
               >
                 <IconDeviceDesktopExclamation />
                 <span className="flex-1 ms-3 whitespace-nowrap">
-                  System call monitoring
+                  System Call Monitoring
                 </span>
               </a>
             </li>
             <li>
               <a
-                href="/dnsalert"
+                href="/dnsAlert"
                 className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
               >
                 <IconMapPins />
@@ -81,7 +110,7 @@ export default function Sidebar() {
             </li>
             <li>
               <a
-                href="/ipgeolocation"
+                href="/ipGeolocation"
                 className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
               >
                 <IconWorld />
